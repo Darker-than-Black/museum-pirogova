@@ -250,7 +250,7 @@ $break: 992px;
 					padding-bottom: 1rem;
 					font-size: 1.6rem;
 					width: 100%;
-    				border-bottom: 4px dotted #fff;
+    				//border-bottom: 4px dotted #fff;
 				}
 				.eventDiscribe {
 					bottom: $ident / 2;
@@ -363,11 +363,10 @@ $break: 992px;
     flex-direction: row;
     justify-content: center;
     &__row {
-    	max-width: 1200px;
+    	//max-width: 1200px;
     }
 	&__promo {
 		width: 25%;
-		
 		display: -webkit-box;
 		display: -ms-flexbox;
 		display: flex;
@@ -391,8 +390,8 @@ $break: 992px;
 	}
 	&__img {
 		display: block;
-   		max-width: 100%;
-		//width: 100%;
+   		//max-width: 100%;
+		width: 100%;
 		height: auto;
 	}
 	&__text {
@@ -430,7 +429,7 @@ $break: 992px;
 	}
 }
 
-.news {
+.article {
 	padding: 2rem 0;
 	background-color: #fbfbfb;
 	border-bottom: 3px solid $bgColor;

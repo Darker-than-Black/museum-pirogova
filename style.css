@@ -257,7 +257,6 @@
   padding-bottom: 1rem;
   font-size: 1.6rem;
   width: 100%;
-  border-bottom: 4px dotted #fff;
 }
 .owl-carousel .item a .eventDiscribe {
   bottom: 5%;
@@ -374,9 +373,6 @@
   flex-direction: row;
   justify-content: center;
 }
-.promo-area__row {
-  max-width: 1200px;
-}
 .promo-area__promo {
   width: 25%;
   display: -webkit-box;
@@ -406,7 +402,7 @@
 }
 .promo-area__img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 .promo-area__text {
@@ -442,22 +438,22 @@
   font-family: 'Lora', serif;
 }
 
-.news {
+.article {
   padding: 2rem 0;
   background-color: #fbfbfb;
   border-bottom: 3px solid #e4002b;
 }
-.news__block {
+.article__block {
   padding: 0 2rem;
   font-family: 'Lora', serif;
   background-color: #fbfbfb;
 }
 @media screen and (max-width: 992px) {
-  .news__block {
+  .article__block {
     padding: 0 1rem;
   }
 }
-.news__items {
+.article__items {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -467,37 +463,37 @@
   -ms-flex-positive: 2;
   flex-grow: 2;
 }
-.news__item {
+.article__item {
   margin: 1.25rem 0;
 }
-.news__item--name {
+.article__item--name {
   font-size: 1.5rem;
   font-weight: bold;
 }
-.news__item--name a {
+.article__item--name a {
   color: #000;
   text-decoration: none;
 }
-.news__item--name:hover a {
+.article__item--name:hover a {
   color: #e4002b;
 }
-.news__item--descript {
+.article__item--descript {
   color: #999;
   font-size: .85rem;
 }
-.news__date {
+.article__date {
   color: #999;
   text-transform: uppercase;
   font-weight: 600;
 }
-.news__date--time {
+.article__date--time {
   font-size: 1.75rem;
   margin-bottom: 0;
 }
-.news__date--type {
+.article__date--type {
   font-size: .6rem;
 }
-.news__event {
+.article__event {
   border-right: 1px solid #ebebeb;
 }
 
