@@ -26,14 +26,14 @@ $gray: #959798;
 	max-width: 90%;
 	margin: 0 auto;
 	&__road {
-		font-family: 'Metrophobic', sans-serif;
+		font-family: 'Playfair Display', serif;
 		font-weight: bold;
 		font-size: 1.1rem;
 		&--link {
 			color: $bgColor;
+			text-decoration: none;
 			&:hover {
 				color: $cBlack;
-				text-decoration: none;
 			}
 		}
 	}
@@ -72,13 +72,13 @@ $gray: #959798;
 		}
 		&--text {
 			margin: 2.5rem 0;
-			a {
-				color: $cBlack;
-				text-decoration: underline;
-				&:hover {
+			//a {
+				//color: $cBlack;
+				//text-decoration: underline;
+				/* &:hover {
 					color: $bgColor;
-				}
-			}
+				} */
+			//}
 			p,
 			figure {
 				//@include newsDescriptCenter;
@@ -112,11 +112,11 @@ $gray: #959798;
 		font-size: 1.2rem;
 		font-weight: bold;
 		a {
-			color: $cBlack;
+			//color: $cBlack;
 			font-weight: 100;
-			text-decoration: underline;
+			//text-decoration: underline;
 			&:hover {
-				color: $bgColor;
+				//color: $bgColor;
 				text-decoration: none;
 			}
 		}
@@ -161,6 +161,7 @@ $gray: #959798;
 			font-size: 1.5rem;
 			font-weight: bold;
 			color: $cBlack;
+			text-decoration: none;
 			&:hover {
 				color: $bgColor;
 				text-decoration: underline;

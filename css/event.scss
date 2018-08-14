@@ -1,0 +1,194 @@
+$bgColor: #e4002b;
+$bgColor_hover: #670014;
+$bgColor_mobile: #cd0027;
+$ident: 10%;
+$break: 992px;
+$cBlack: #000712;
+$gray: #959798;
+
+article {
+	display: flex;
+}
+
+@mixin centerContent {
+	margin: 0 auto;
+	max-width: 60%;
+    @media screen and (max-width: $break * .75) {
+	    max-width: 70%;
+	}
+	@media screen and (max-width: $break / 1.5) {
+	    max-width: 95%;
+	}
+}
+
+@mixin blockUp($up : -4.5rem) {
+	position: relative;
+		//top: -4.5rem;
+	top: $up;
+}
+
+.event {
+	/* position: relative; */
+	&__background {
+		width: 100%;
+		height: 50vh;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		/* position: relative; */
+		background-position: center;
+		background-size: cover;
+		a {
+			font-family: 'Playfair Display', serif;
+			position: absolute;
+			top: 6.5rem;
+			left: 2.5rem;
+			padding: 10px;
+			text-decoration: none;
+			color: #fff;
+			background-color: rgba(0,0,0,.7);
+			i {
+				font-size: .9rem;
+			}
+		}
+		@media screen and (min-width: $break * .75) {
+		    height: 100vh;
+		}
+	}
+	&__info {
+		font-family: 'Playfair Display', serif;
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+		-webkit-align-items: center;
+		        align-items: center;
+		max-width: 50%;
+		margin: 0 auto;
+		padding: 2rem 3.5rem 4.5rem;
+		color: $cBlack;
+		background: #fff;
+		
+		position: relative;
+		top: -4.5rem;
+    	@media screen and (max-width: $break * .75) {
+		    max-width: 70%;
+		    padding: 2rem 1.75rem 2.5rem;
+		}
+		@media screen and (max-width: $break / 1.5) {
+		    max-width: 90%;
+		}
+		&--type,
+		&--date, 
+		&--time {
+			font-weight: bold;
+			text-transform: uppercase;
+			font-family: 'Lora', serif;
+		}
+		&--type {
+			font-size: .75rem;
+		}
+		&--date, 
+		&--time {
+			font-size: 1.2rem;
+			margin-bottom: 0;
+		}
+		&--title {
+			font-weight: bold;
+			//font-size: 3.5rem;
+			font-size: 400%;
+			text-align: center;
+			margin: 1.75rem 0 2.5rem;
+			@media screen and (max-width: $break) {
+		   		font-size: 300%;
+			}
+			@media screen and (max-width: $break / 1.5) {
+			    font-size: 230%;
+			}
+			@media screen and (max-width: $break / 2.25) {
+			    font-size: 170%;
+			}
+		}
+	}
+	&__description {
+		-webkit-flex-direction: column;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	    /* margin: 0 auto; */
+	    //max-width: 60%;
+	    /* position: relative;
+	    		top: -4.5rem; */
+	 //    @media screen and (max-width: $break * .75) {
+		//     max-width: 70%;
+		// }
+		// @media screen and (max-width: $break / 1.5) {
+		//     max-width: 95%;
+		// }
+		@include blockUp();
+		@include centerContent;
+		p {
+			font-family: 'Lora', serif;
+			//font-weight: bold;
+			font-size: 1.15rem;
+			//a {
+				//color: $cBlack;
+				//text-decoration: underline;
+				//&:hover {
+				//	color: $bgColor;
+				//}
+			//}
+		}
+	}
+}
+
+.upcoming-event {
+	@include centerContent;
+	@include blockUp(-3.5rem);
+	font-family: 'Merriweather', serif;
+	&__name {
+		font-weight: bold;
+		font-family: 'Playfair Display', serif;
+	}
+	&__block {
+		display: flex;
+	    flex-wrap: wrap;
+	    justify-content: space-between;
+	}
+	&__small-block {
+		//width: 50%;
+		width: calc(100% * (1/2) - 10px - 1px);
+		margin: 1rem 0;
+		border: 1px solid $gray;
+		padding: 2.5% 3%;
+		font-weight: bold;
+		@media screen and (max-width: $break * .75) {
+		    width: 100%;
+		}
+		&--type {
+			color: white;
+			background-color: $gray;
+			display: inline-block;
+			text-transform: uppercase;
+			padding: .15rem .25rem;
+			font-size: .75rem;
+			margin-bottom: 0;
+		}
+		&--title {
+			font-weight: 900;
+			margin: 1.5rem 0;
+			//border-bottom: 1px solid $gray;
+			a {
+				text-decoration: none;
+			}
+		}
+		&--time {
+			color: $gray;
+		}
+	}
+	&__btn {
+		margin: 2rem auto;
+		display: flex;
+		background-color: transparent;
+		padding: .5rem 2.5rem;
+		border: 1px solid $gray;
+		cursor: pointer;
+	}
+}

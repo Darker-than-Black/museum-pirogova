@@ -49,22 +49,26 @@ if (mql.matches) {
 
     $(function() {
 	    $(window).scroll(function() {
-	        if ($(document).scrollTop() > 90) {
+	        if ($(document).scrollTop() >= 90) {
 	            $('.menu .navbar-brand img').css({
 	            	"margin":"0",
-	            	"width":"35px"
+	            	"width":"35px",
+	            	"transition":".5s"
 	            });
 	            $('.menu .navbar .dropdown-menu').css({
-	            	"top": "23px"
+	            	"top": "27px",
+	            	"transition":".5s"
 	            });
 	        }
 	        else {
 	            $('.menu .navbar-brand img').css({
 	            	"margin":"10px",
-	            	"width":"50px"
+	            	"width":"50px",
+	            	"transition":".5s"
 	            });
 	            $('.menu .navbar .dropdown-menu').css({
-	            	"top": "40px"
+	            	"top": "44px",
+	            	"transition":".5s"
 	            });
 	        }
 	    });
