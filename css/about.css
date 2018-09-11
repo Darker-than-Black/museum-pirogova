@@ -1,0 +1,87 @@
+.about__outer-wrapper {
+  display: block;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 75vh;
+}
+.about__content, .about__nav {
+  float: left;
+}
+.about__content {
+  max-width: 45rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 1024px) {
+  .about__content {
+    max-width: 95%;
+    margin: 2.5% auto;
+    float: none;
+  }
+}
+.about__nav {
+  max-width: 15rem;
+  margin-top: -3.5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  padding-left: 0;
+  border: 1px solid #e6e6e6;
+  background-color: #FFF;
+}
+@media screen and (max-width: 1024px) {
+  .about__nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .about__nav {
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+  }
+}
+.about__nav * + * {
+  border-top: 2px solid #e6e6e6;
+}
+.about__nav .nav__item {
+  list-style: none;
+  padding: .75em 1.75em;
+}
+.about__nav .nav__item--text {
+  text-decoration: none;
+  font-family: 'Lora', serif;
+  font-weight: bold;
+  font-size: .9em;
+}
+
+.content__part {
+  font-family: 'Lora', serif;
+}
+.content__part--title {
+  font-size: 2.75em;
+  font-weight: bold;
+  margin: 1.5em 0;
+}
+.content__part--text p figcaption,
+.content__part--text figure figcaption {
+  font-size: .9rem;
+  font-style: italic;
+  font-weight: bold;
+  letter-spacing: .05rem;
+  max-width: 95%;
+  margin: .75rem auto;
+}
+.content__part--text p {
+  padding: .5rem 0;
+  text-align: justify;
+  display: inline-block;
+  font-size: 1.25em;
+}
+.content__part--text figure img,
+.content__part--text img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*# sourceMappingURL=about.css.map */
