@@ -1,0 +1,16 @@
+$bgColor: #e4002b;
+$bgColor_hover: #670014;
+$bgColor_mobile: #cd0027;
+$ident: 10%;
+$break: 992px;
+$cBlack: #000712;
+$gray: #959798;
+$white-gray: #e6e6e6;
+
+.news {
+	&__content {
+		&--marks {
+			font-style: normal;
+		}
+	}
+}
