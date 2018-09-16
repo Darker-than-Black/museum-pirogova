@@ -1,0 +1,279 @@
+@media screen and (min-width: 1200px) {
+  .leadership .news__content {
+    max-width: 85%;
+  }
+}
+.leadership .news__content--title {
+  font-style: normal;
+}
+.leadership__section {
+  margin: 0 auto;
+  padding: 0;
+}
+.leadership__section .col-md-4 {
+  padding: 0;
+}
+
+.leader {
+  position: relative;
+  border: 1px solid #e6e6e6;
+  cursor: pointer;
+}
+.leader__img {
+  position: relative;
+}
+.leader__img:after {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  background-color: #fff;
+  content: "\f129";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 3.45rem;
+  height: 3.45rem;
+  position: absolute;
+  bottom: 33%;
+  right: 17%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  -webkit-box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.25);
+  font-size: 2rem;
+  color: #e4002b;
+  z-index: 10;
+}
+@media screen and (max-width: 892.8px) {
+  .leader__img:after {
+    display: none;
+  }
+}
+.leader__img:before {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  content: '';
+  background: transparent;
+  z-index: 9;
+}
+.leader__img img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-clip-path: circle(35% at 50% 39%);
+          clip-path: circle(35% at 50% 39%);
+  -webkit-transition: -webkit-clip-path 0.5s;
+  transition: -webkit-clip-path 0.5s;
+  transition: clip-path 0.5s;
+  transition: clip-path 0.5s, -webkit-clip-path 0.5s;
+}
+.leader__img:hover img {
+  -webkit-clip-path: circle(100% at 50% 39%);
+          clip-path: circle(100% at 50% 39%);
+}
+.leader__img:hover:after {
+  bottom: 5%;
+  right: 3%;
+  width: 2.75rem;
+  height: 2.75rem;
+  font-size: 1.5rem;
+}
+.leader__img:hover:before {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(195, 20, 50, 0.2)), to(rgba(36, 11, 54, 0.2)));
+  background: linear-gradient(to bottom, rgba(195, 20, 50, 0.2), rgba(36, 11, 54, 0.2));
+}
+.leader__img:hover .leader__content--title {
+  bottom: 10%;
+  opacity: 0;
+}
+.leader__img:hover .leader__content--blurb {
+  bottom: 3%;
+  opacity: 1;
+  color: #fff;
+  z-index: 9;
+}
+.leader__content {
+  font-family: 'PT Sans Narrow', sans-serif;
+}
+.leader__content h5 {
+  font-weight: bold;
+}
+.leader__content--title, .leader__content--blurb {
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  position: absolute;
+  left: 13%;
+}
+@media screen and (max-width: 892.8px) {
+  .leader__content--title, .leader__content--blurb {
+    left: 5%;
+  }
+}
+.leader__content--title {
+  bottom: 3%;
+}
+.leader__content--blurb {
+  bottom: -5%;
+  opacity: 0;
+  max-width: 70%;
+}
+@media screen and (max-width: 892.8px) {
+  .leader__content--blurb {
+    max-width: 95%;
+  }
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 99;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  font-family: 'Lora', serif;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(35, 7, 77, 0.7)), to(rgba(204, 83, 51, 0.6)));
+  background: linear-gradient(to top, rgba(35, 7, 77, 0.7), rgba(204, 83, 51, 0.6));
+}
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  border: none;
+  width: 60%;
+  height: 100%;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation: animatetop 0.4s ease-in-out;
+          animation: animatetop 0.4s ease-in-out;
+}
+@media screen and (max-width: 992px) {
+  .modal-content {
+    width: 90%;
+    height: auto;
+  }
+}
+.modal-body {
+  padding: 0;
+  margin: 0;
+}
+.modal-body--left {
+  padding: 0;
+  background-color: #000712;
+}
+.modal-body--left img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.modal-body--right {
+  padding: 2.25rem 1.75rem;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.modal__title {
+  font-weight: bold;
+}
+.modal__text {
+  overflow: auto;
+  margin: 2rem 0 0;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.close {
+  position: absolute;
+  right: -1.375rem;
+  top: -1.375rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #cd0027;
+  opacity: 1;
+  cursor: pointer;
+  z-index: 100;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 5px 0px;
+          box-shadow: rgba(0, 0, 0, 0.25) 3px 3px 5px 0px;
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+}
+@media screen and (max-width: 496px) {
+  .close {
+    width: 3.125rem;
+    height: 3.125rem;
+    font-size: 1.5rem;
+    right: -7px;
+    top: -7px;
+  }
+}
+.close:hover, .close:focus {
+  color: #fff !important;
+  opacity: 1 !important;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.modal__text::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  background-color: #F5F5F5;
+}
+
+.modal__text::-webkit-scrollbar {
+  width: 12px;
+  background-color: #F5F5F5;
+}
+
+.modal__text::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+  background-color: #555;
+}
+
+/*# sourceMappingURL=leadership.css.map */

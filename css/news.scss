@@ -12,11 +12,11 @@ $gray: #959798;
 	@media screen and (min-width: $break) {
 	    max-width: 100% - $ident;
 	}
-	@media screen and (min-width: 1300px) {
+	@media screen and (min-width: 1200px) {
 	   max-width: 100% - $ident * 3.5;
 	}
 	@media screen and (min-width: 1900px) {
-	    max-width: 100% - $ident;
+	    max-width: 100% - $ident * 5;
 	}
 }
 
