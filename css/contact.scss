@@ -1,0 +1,113 @@
+$bgColor: #e4002b;
+$bgColor_hover: #670014;
+$bgColor_mobile: #cd0027;
+$ident: 10%;
+$break: 992px;
+$cBlack: #000712;
+$gray: #959798;
+$white-gray: #e6e6e6;
+$space-gray: #c5c7c7;
+$btn-bg: #65696a;
+$btn-bg_hover: #4c4f50;
+$radiusCircleLeaderImg: 3.45rem;
+$radiusCircleLeaderImg_hover: 2.75rem;
+$hovertimeMove: .5s;
+$closeBtnSize: 3.75rem;
+
+@import '../style.scss';
+
+.contact {
+	//background: linear-gradient(to top, #8a2387, #e94057, #cd0027);
+	position: relative;
+   	top: 5.25rem;
+	&__info {
+		background: linear-gradient(to top, #333333, #e4002b);
+		min-height: 60vh;
+		color: #fff;
+		&--wrapper {
+			display: flex;
+		    flex-direction: column;
+		    //justify-content: center;
+		    align-items: center;
+		    font-family: 'Playfair Display', serif;
+		    @include newsDescriptCenter;
+			@media screen and (min-width: 1200px) {
+			   max-width: 100% - $ident * 2.5;
+			}
+		}
+		[class*="fa-"] {
+			//color: #fff;
+			font-size: 3.75rem;
+			margin: 2.5rem;
+		}
+		&--title {
+			font-weight: bold;
+    		font-size: 2.5rem;
+		}
+		&--text {
+			text-align: center;
+			margin: 2.25rem;
+		    font-size: 1.25rem;
+		    font-style: italic;
+		}
+	}
+	&__map {
+		padding: 0;
+		iframe {
+			width: 100%;
+			height: 100%;
+			min-height: 15rem;
+		}
+	}
+	&__message {
+		background-color: #333333;
+		font-family: 'PT Sans Narrow', sans-serif;
+		color: #fff;
+		padding: 1.75rem 2.25rem;
+		&--title {
+			font-weight: bold;
+			margin-bottom: 2.25rem;
+		}
+		.mess {
+			input,
+			textarea {
+				border: none;
+				padding: 3px 10px;
+				border-radius: 4px;
+			}
+			input {
+				width: 49.5%;
+			}
+			input[type="mail"] {
+				width: 100%;
+			}
+			textarea {
+				width: 100%;
+				height: 11rem;
+				resize: none;
+			}
+			input[type="submit"] {
+				position: relative;
+    			left: 33%;
+    			width: 33%;
+    			height: 2.25rem;
+    			color: #fff;
+    			background-color: $bgColor_mobile;
+    			text-transform: uppercase;
+    			font-weight: bold;
+    			letter-spacing: .85px;
+    			transition: all .5s ease-in-out;
+    			box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.25);
+    			&:hover {
+    				color: $bgColor_hover;
+    				background-color: $white-gray;
+    			}
+			}
+		}
+	}
+}
+
+footer {
+	position: relative;
+    top: 5.25rem;
+}

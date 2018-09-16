@@ -15,6 +15,20 @@ $gray: #959798;
     text-decoration: none !important;
 }
 
+@mixin newsDescriptCenter {
+	max-width: 100%;
+	margin: 0 auto;
+	@media screen and (min-width: $break) {
+	    max-width: 100% - $ident;
+	}
+	@media screen and (min-width: 1200px) {
+	   max-width: 100% - $ident * 3.5;
+	}
+	@media screen and (min-width: 1900px) {
+	    max-width: 100% - $ident * 5;
+	}
+}
+
 hr {
 	background: url(https://www.metmuseum.org/assets/icons/ico-diamond.svg) repeat-x;
     background-size: .3125rem .3125rem;

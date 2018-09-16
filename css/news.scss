@@ -5,20 +5,8 @@ $ident: 10%;
 $break: 992px;
 $cBlack: #000712;
 $gray: #959798;
+@import '../style.scss';
 
-@mixin newsDescriptCenter {
-	max-width: 100%;
-	margin: 0 auto;
-	@media screen and (min-width: $break) {
-	    max-width: 100% - $ident;
-	}
-	@media screen and (min-width: 1200px) {
-	   max-width: 100% - $ident * 3.5;
-	}
-	@media screen and (min-width: 1900px) {
-	    max-width: 100% - $ident * 5;
-	}
-}
 
 .news {
 	//padding-top: 10%;
