@@ -1,7 +1,66 @@
 /* FONTS */
 /* Lora */
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&subset=cyrillic');
+@font-face {
+	font-family: 'Lora', serif;
+	src: url('../fonts/lora/Lora-Regular.ttf');
+}
+@font-face {
+	font-family: 'Lora', serif;
+	src: url('../fonts/lora/Lora-Bold.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Lora', serif;
+	src: url('../fonts/lora/Lora-BoldItalic.ttf');
+	font-style: italic;
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Lora', serif;
+	src: url('../fonts/lora/Lora-Italic.ttf');
+	font-style: italic;
+}
 /* Playfair Display */
-@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i&subset=cyrillic');
+@font-face {
+	font-family: 'Playfair Display', serif;
+	src: url('../fonts/playfair/PlayfairDisplay-Regular.ttf');
+}
+@font-face {
+	font-family: 'Playfair Display', serif;
+	src: url('../fonts/playfair/PlayfairDisplay-Bold.ttf');
+	font-weight: bold;
+}
+@font-face {
+	font-family: 'Playfair Display', serif;
+	src: url('../fonts/playfair/PlayfairDisplay-Black.ttf');
+	font-weight: black;
+}
+@font-face {
+	font-family: 'Playfair Display', serif;
+	src: url('../fonts/playfair/PlayfairDisplay-Italic.ttf');
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Playfair Display', serif;
+	src: url('../fonts/playfair/PlayfairDisplay-BlackItalic.ttf');
+	font-weight: black;
+	font-style: italic;
+}
+@font-face {
+	font-family: 'Playfair Display', serif;
+	src: url('../fonts/playfair/PlayfairDisplay-BoldItalic.ttf');
+	font-weight: bold;
+	font-style: italic;
+}
+/* PT Sans Narrow */
+@font-face {
+	font-family: 'PT Sans Narrow', sans-serif;
+	src: url('../fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Regular.ttf');
+}
+@font-face {
+	font-family: 'PT Sans Narrow', sans-serif;
+	src: url('../fonts/pt_sans_narrow/PT_Sans-Narrow-Web-Bold.ttf');
+	font-weight: bold;
+}
 /* Metrophobic */
 @import url('https://fonts.googleapis.com/css?family=Metrophobic');
