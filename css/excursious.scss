@@ -1,0 +1,67 @@
+$bgColor: #e4002b;
+$bgColor_hover: #670014;
+$bgColor_mobile: #cd0027;
+$ident: 10%;
+$break: 992px;
+$cBlack: #000712;
+$gray: #959798;
+$white-gray: #e6e6e6;
+$space-gray: #c5c7c7;
+$btn-bg: #65696a;
+$btn-bg_hover: #4c4f50;
+$radiusCircleLeaderImg: 3.45rem;
+$radiusCircleLeaderImg_hover: 2.75rem;
+$hovertimeMove: .5s;
+$closeBtnSize: 3.75rem;
+
+.excursious {
+	&__info {
+		font-family: 'Kotyhoroshko', sans-serif;
+		font-weight: bold;
+		.event__info {
+			&--title {
+				text-shadow: 2px 1px 2px rgba(150, 150, 150, 1);
+			}
+			&--type {
+				text-align: center;
+			}
+			&--date,
+			&--time {
+				text-align: center;
+				font-family: 'Kotyhoroshko', sans-serif;
+			}
+		}
+	}
+	&__schedule {
+		position: relative;
+    	top: -4.5rem;
+		.article {
+			&__block {
+				font-family: 'Kotyhoroshko', sans-serif !important;
+				.block__name {
+					font-family: 'Kotyhoroshko', sans-serif !important;
+					font-size: 1.75rem;
+				}
+			}
+			&__date {
+				display: flex;
+    			align-items: center;
+				&--type {
+					font-size: 1.25rem;
+				}
+			}
+			&__item {
+				&--name {
+					width: 100%;
+					font-size: 1.25rem;
+					font-weight: normal;
+					span {
+						font-size: 0.75rem;
+						font-family: 'Lora';
+						font-weight: bold;
+					}
+				}
+			}
+		}
+	}
+}
