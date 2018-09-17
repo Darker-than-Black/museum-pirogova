@@ -1,0 +1,48 @@
+.excursious__info {
+  font-family: 'Kotyhoroshko', sans-serif;
+  font-weight: bold;
+}
+.excursious__info .event__info--title {
+  text-shadow: 2px 1px 2px #969696;
+}
+.excursious__info .event__info--type {
+  text-align: center;
+}
+.excursious__info .event__info--date, .excursious__info .event__info--time {
+  text-align: center;
+  font-family: 'Kotyhoroshko', sans-serif;
+}
+.excursious__schedule {
+  position: relative;
+  top: -4.5rem;
+}
+.excursious__schedule .article__block {
+  font-family: 'Kotyhoroshko', sans-serif !important;
+}
+.excursious__schedule .article__block .block__name {
+  font-family: 'Kotyhoroshko', sans-serif !important;
+  font-size: 1.75rem;
+}
+.excursious__schedule .article__date {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.excursious__schedule .article__date--type {
+  font-size: 1.25rem;
+}
+.excursious__schedule .article__item--name {
+  width: 100%;
+  font-size: 1.25rem;
+  font-weight: normal;
+}
+.excursious__schedule .article__item--name span {
+  font-size: 0.75rem;
+  font-family: 'Lora';
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=excursious.css.map */
