@@ -552,36 +552,91 @@ a:hover {
 
 .footer {
   background-color: #fbfbfb;
-  padding: 3rem 4.5rem 2rem;
-  font-family: 'Metrophobic', sans-serif;
+  padding: 3rem 1.75rem 1.75rem;
+  font-family: 'Lora', sans-serif;
+  color: #65696a;
 }
-.footer__copyright {
-  font-size: .75rem;
-  color: #999;
-  text-align: end;
-}
-.footer__menu ul {
-  list-style: none;
+.footer h3 {
+  font-size: 1.5rem;
   font-weight: bold;
-  font-size: 1.2rem;
+  color: #000712;
+  font-family: 'Kotyhoroshko';
 }
-@media screen and (max-width: 742px) {
-  .footer__menu ul {
-    padding-left: 0;
-  }
-}
-.footer__menu li:hover a {
-  color: #e4002b;
-}
-.footer__menu a {
+.footer a {
   text-decoration: none;
 }
-.footer___name {
-  font-size: 1.25rem;
+.footer .row {
+  max-width: 95%;
+  margin: 0 auto;
 }
-.footer__plase--data {
-  line-height: 1.25rem;
-  font-size: .75rem;
+@media screen and (min-width: 992px) {
+  .footer .row {
+    max-width: 892.8px;
+  }
+}
+@media screen and (min-width: 1091.2px) {
+  .footer .row {
+    max-width: 1041.6px;
+  }
+}
+@media screen and (min-width: 1289.6px) {
+  .footer .row {
+    max-width: 1240px;
+  }
+}
+.footer .row > * {
+  margin: 1.25rem 0;
+}
+.footer__main--title a {
+  text-decoration: none;
+}
+.footer__hours-of-work--time {
+  width: 100%;
+}
+.footer__contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__contact--mail a {
+  color: #e4002b;
+}
+.footer__contact--social {
+  font-size: 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__link-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.footer__link-list a {
+  display: block;
+}
+.footer__copyright {
+  font-family: 'Kotyhoroshko';
+  font-size: 0.9rem;
+  padding-top: 3.5rem;
+  text-align: right;
 }
 
 .contact {
@@ -641,7 +696,6 @@ a:hover {
   text-align: center;
   margin: 2.25rem;
   font-size: 1.25rem;
-  font-style: italic;
 }
 .contact__map {
   padding: 0;
@@ -664,6 +718,7 @@ a:hover {
 .contact__message .mess input,
 .contact__message .mess textarea {
   border: none;
+  border-bottom: 2px solid #959798;
   padding: 3px 10px;
   border-radius: 4px;
 }
