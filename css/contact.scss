@@ -48,7 +48,7 @@ $closeBtnSize: 3.75rem;
 			text-align: center;
 			margin: 2.25rem;
 		    font-size: 1.25rem;
-		    //font-style: italic;
+		    font-style: italic;
 		}
 	}
 	&__map {
@@ -72,7 +72,6 @@ $closeBtnSize: 3.75rem;
 			input,
 			textarea {
 				border: none;
-				border-bottom: 2px solid $gray;
 				padding: 3px 10px;
 				border-radius: 4px;
 			}
